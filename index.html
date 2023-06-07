@@ -19,7 +19,7 @@
             <img src="./img/Logo.svg" alt="" />
           </a>
 
-          <ul class="flex gap-5 ">
+          <ul class="flex gap-5 md:hidden">
             <li>
               <a
                 href="#"
@@ -51,13 +51,141 @@
             <li>
               <a
                 href="#"
-                class="font-medium text-xl text-lightback hover:text-lightred"
+                class="font-medium text-xl text-lightback hover:text-lightred transition-colors lg:text-base"
                 >Blog</a
               >
             </li>
           </ul>
+
+          <ul
+            id="menu"
+            class="hidden absolute left-6 right-6 top-24 bg-lightred flex-col items-center"
+          >
+            <li><a href="#" class="py-4 block text-white">About</a></li>
+            <li><a href="#" class="py-4 block text-white">Services</a></li>
+            <li><a href="#" class="py-4 block text-white">Case Studies</a></li>
+            <li><a href="#" class="py-4 block text-white">Careers</a></li>
+            <li><a href="#" class="py-4 block text-white">Blog</a></li>
+          </ul>
+
+          <!-- Button -->
+
+          <button class="burger hidden md:block">
+            <span class="burger-line top-line"></span>
+            <span class="burger-line mid-line"></span>
+            <span class="burger-line bottom-line"></span>
+          </button>
         </nav>
       </div>
     </header>
+
+    <main>
+      <section id="hero">
+        <div class="container">
+          <h1
+            class="pt-24 font-black text-5xl max-w-2xl text-center mx-auto leading-snug lg:text-4xl lg:pt-16 md:text-3xl md:pt-12 md:w-full sm:pt-10 sm:text-2xl"
+          >
+            Grow your business online. Get. More. Leads.
+          </h1>
+
+          <p
+            class="text-xl tracking-tight max-w-xl mx-auto mt-[18px] text-center md:text-lg md:mt-4 sm:mt-2 sm:text-base"
+          >
+            Wanna get serious into digital marketing? Then you need leads and
+            this is where we can help you.
+          </p>
+
+          <div class="flex justify-center gap-7 sm:flex-col sm:gap-0 sm:mt-4">
+            <a
+              href=""
+              class="btn sm:text-center sm:mt-4 sm:text-base sm:max-w-full sm:text-center"
+              >Start here.</a
+            >
+            <a
+              href=""
+              class="inline-block mt-6 py-[10px] px-8 border-2 border-lightred rounded-2xl text-lightred text-xl tracking-tight sm:text-center sm:mt-4 sm:text-base sm:max-w-full"
+              >Learn More.</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div
+            class="flex justify-between mt-[154px] pb-32 lg:flex-col lg:mt-32 lg:pb-24"
+          >
+            <div class="flex flex-col w-1/2 lg:w-full">
+              <div class="text-darkred font-bold text-xl tracking-tight">
+                about us
+              </div>
+              <h2 class="mt-[2px] text-4xl font-black lg:text-3xl sm:text-2xl">
+                The team behind the brand.
+              </h2>
+              <p class="mt-[10px] max-w-sm text-lg lg:min-w-full sm:text-base">
+                Proin elementum fermentum auctor. Nulla semper, est eget congue
+                pellentesque, erat nulla molestie mi, in finibus leo nisl ac
+                lectus. Praesent non urna. Nulla congue porta lectus in laoreet.
+                Aenean pellentesque vitae metus id porttitor.t
+              </p>
+
+              <a
+                href=""
+                class="btn sm:text-center sm:mt-4 sm:text-base sm:max-w-full"
+                >Learn More</a
+              >
+            </div>
+            <div class="flex flex-col w-[450px] lg:w-full lg:mt-6">
+              <img class="" src="./img/about.jpg" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-darkgray py-20">
+      <div class="container">
+        <div class="flex gap-40 md:flex-col md:gap-10">
+          <div class="max-w-xs md:max-w-full">
+            <a href="">
+              <img src="./img/footer-logo.svg" alt="" />
+            </a>
+            <p class="mt-[18px] text-white text-xl">
+              Sign up for our newsletter to get latest news from us
+            </p>
+            <input
+              class="mt-3 bg-[#454545] flex w-full py-3 px-4 rounded-xl border-[1px] border-[#595959] focus:outline-none focus:border-lightred placeholder:italic"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn">Submit</button>
+          </div>
+
+          <div class="">
+            <div class="text-lightred text-xl font-medium">Jump To:</div>
+            <ul>
+              <li class="mt-3">
+                <a class="text-white text-xl font-medium" href="#">About</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-white text-xl font-medium" href="#">Contact</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-white text-xl font-medium" href="#">Services</a>
+              </li>
+              <li class="mt-3">
+                <a class="text-white text-xl font-medium" href="#"
+                  >Case Studies</a
+                >
+              </li>
+              <li class="mt-3">
+                <a class="text-white text-xl font-medium" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
